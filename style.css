@@ -111,6 +111,12 @@ p {
     color: var(--neutral-Grey-500)
 }
 
+.feature-title,
+.feature-title-para {
+    max-width: 500px;
+    margin: auto;
+}
+
 .feature-title span {
     font-weight: var(--fw-bold-600);
 }
@@ -121,7 +127,7 @@ p {
     box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
     border-radius: 5px;
     padding: 1.8rem;
-    max-width: 19.625rem;
+    max-width: 24rem;
 }
 
 .feature-subtitle {
