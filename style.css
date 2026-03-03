@@ -107,14 +107,19 @@ p {
 
 .feature-title {
     font-weight: var(--fw-regular-200);
-    font-size: 1.5rem;
-    color: var(--neutral-Grey-500)
+    font-size: 2.25rem;
+    color: var(--neutral-Grey-500);
 }
 
 .feature-title,
 .feature-title-para {
     max-width: 500px;
     margin: auto;
+}
+
+.feature-title-para {
+    margin-top: 1rem;
+    color: var(--neutral-Grey-500);
 }
 
 .feature-title span {
@@ -145,20 +150,20 @@ p {
 }
 
 .card-Supervisor {
-    border-top: 7px solid var(--primary-Cyan);
+    border-top: 4px solid var(--primary-Cyan);
 
 }
 
 .card-Team-Builder {
-    border-top: 7px solid var(--primary-Red);
+    border-top: 4px solid var(--primary-Red);
 }
 
 .card-Karma {
-    border-top: 7px solid var(--primary-Orange);
+    border-top: 4px solid var(--primary-Orange);
 }
 
 .card-Calculator {
-    border-top: 7px solid var(--primary-Blue);
+    border-top: 4px solid var(--primary-Blue);
 }
 
 .col {
