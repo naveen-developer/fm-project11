@@ -91,7 +91,7 @@ body {
     place-items: center;
     min-height: 100dvh;
     padding: 4rem 2rem;
-    background-color: var(--neutral-White);
+    background-color: #FAFAFA;
 }
 
 p {
@@ -140,7 +140,9 @@ p {
 }
 
 .feature-subtitle-para {
-    color: var(--neutral-Grey-400);
+    color: var(--neutral-Grey-500);
+    font-weight: var(--fw-bold-600);
+    font-size: 1.3rem;
 }
 
 .feature-icon {
