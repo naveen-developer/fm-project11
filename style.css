@@ -1,0 +1,195 @@
+:root {
+    --primary-Red: hsl(0, 78%, 62%);
+    --primary-Cyan: hsl(180, 62%, 55%);
+    --primary-Orange: hsl(34, 97%, 64%);
+    --primary-Blue: hsl(212, 86%, 64%);
+
+    --neutral-Grey-500: hsl(234, 12%, 34%);
+    --neutral-Grey-400: hsl(212, 6%, 44%);
+    --neutral-White: hsl(0, 0%, 100%);
+
+    --ff-poppins: "Poppins", sans-serif;
+    --fw-regular-200: 200;
+    --fw-regular-400: 400;
+    --fw-bold-600: 600;
+
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+    margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+body {
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-regular-200);
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+    padding: 4rem 2rem;
+    background-color: var(--neutral-White);
+}
+
+p {
+    font-size: 15px;
+    font-weight: var(--fw-regular-400);
+}
+
+
+
+.feature-section {
+    text-align: center;
+}
+
+.feature-title {
+    font-weight: var(--fw-regular-200);
+    font-size: 1.5rem;
+    color: var(--neutral-Grey-500)
+}
+
+.feature-title span {
+    font-weight: var(--fw-bold-600);
+}
+
+.feature-card {
+    margin: 2rem;
+    text-align: start;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius: 5px;
+    padding: 1.8rem;
+    max-width: 19.625rem;
+}
+
+.feature-subtitle {
+    color: var(--neutral-Grey-500);
+}
+
+.feature-subtitle-para {
+    color: var(--neutral-Grey-400);
+}
+
+.feature-icon {
+    display: flex;
+    justify-content: end;
+    margin: 2rem 0.5rem 1rem;
+}
+
+.card-Supervisor {
+    border-top: 7px solid var(--primary-Cyan);
+
+}
+
+.card-Team-Builder {
+    border-top: 7px solid var(--primary-Red);
+}
+
+.card-Karma {
+    border-top: 7px solid var(--primary-Orange);
+}
+
+.card-Calculator {
+    border-top: 7px solid var(--primary-Blue);
+}
+
+.col {
+    align-content: center;
+}
+
+.feature-cards {
+    display: grid;
+    place-items: center;
+}
+
+@media screen and (min-width:768px) {
+    .feature-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature-card {
+        margin: 4rem 1rem;
+    }
+
+    .card-Team-Builder {
+        grid-column: 2;
+    }
+
+    .card-Supervisor {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .card-Karma {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .card-Calculator {
+        grid-column: 2;
+        grid-row: 4;
+    }
+}
