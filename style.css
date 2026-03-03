@@ -137,12 +137,13 @@ p {
 
 .feature-subtitle {
     color: var(--neutral-Grey-500);
+    font-weight: var(--fw-bold-600);
+    font-size: 1.3rem;
 }
 
 .feature-subtitle-para {
     color: var(--neutral-Grey-500);
-    font-weight: var(--fw-bold-600);
-    font-size: 1.3rem;
+
 }
 
 .feature-icon {
